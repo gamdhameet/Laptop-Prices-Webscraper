@@ -1,5 +1,6 @@
 # import random
 # import time
+import random
 
 import requests
 from bs4 import BeautifulSoup
@@ -32,4 +33,5 @@ for i, product in enumerate(productCard):
     sheet.write(i + 1, 1, s2)
     print(s1)
     print(s2)
-xl.save('laptopDatafile.xls')
+xl.save(f'{random.randint(0,100000)}.xls')
+
