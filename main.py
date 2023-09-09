@@ -10,7 +10,7 @@ xl = Workbook()
 sheet = xl.add_sheet('sheet')
 sheet.write(0, 0, 'Laptop Description')
 sheet.write(0, 1, 'Price in $')
-URL = "https://www.amazon.com/s?k=laptops&ref=nb_sb_noss"
+URL = ["https://www.amazon.com/s?k=laptops&ref=nb_sb_noss"]
 HEADER = ({
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
     'Accept-Language': 'en-US, en;q=0.5'})
